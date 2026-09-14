@@ -272,7 +272,7 @@
       doneStateEl.classList.remove('hidden');
       doneStateEl.querySelector('h2').textContent = "You've completed the course.";
       doneStateEl.querySelector('.muted').textContent =
-        'Every phase is done. Use Browse to revisit any card, or Progress to see your full run.';
+        'Every phase is done. Use Browse to revisit any card, or check your Dashboard for the full picture.';
       return;
     }
 
@@ -302,7 +302,7 @@
 
     if (summary.remaining === 0) {
       heading.textContent = "You've completed the course.";
-      sub.textContent = 'Every phase is done. Use Browse to revisit any card, or Progress to see your full run.';
+      sub.textContent = 'Every phase is done. Use Browse to revisit any card, or check your Dashboard for the full picture.';
       removeContinueButton();
     } else {
       heading.textContent = 'Nice work — card complete.';
@@ -311,7 +311,7 @@
       ensureContinueButton();
     }
 
-    refreshProgressView();
+    refreshDashboard();
     refreshTabBadges();
   }
 
@@ -396,7 +396,7 @@
         state = Progress.completeCard(state, card.id, new Date());
         saveState(state);
         renderBrowse();
-        refreshProgressView();
+        refreshDashboard();
         refreshTabBadges();
         openReader(card);
       };
@@ -497,7 +497,7 @@
     renderReviewCard();
   });
 
-  reviewBackBtn.addEventListener('click', function () { showView('progress'); });
+  reviewBackBtn.addEventListener('click', function () { showView('dashboard'); });
 
   reviewEntryBtn.addEventListener('click', function () {
     reviewDeck = buildReviewDeck();
@@ -505,7 +505,7 @@
     showView('review');
   });
 
-  // ---------- Progress view ----------
+  // ---------- Dashboard view ----------
 
   var statStreakEl = document.getElementById('stat-streak');
   var statCompletedEl = document.getElementById('stat-completed');
@@ -515,7 +515,7 @@
   var currentPhaseNameEl = document.getElementById('current-phase-name');
   var phaseProgressListEl = document.getElementById('phase-progress-list');
 
-  function refreshProgressView() {
+  function refreshDashboard() {
     var summary = Progress.getProgressSummary(state, CARDS);
 
     statStreakEl.textContent = summary.streak;
@@ -547,10 +547,147 @@
       phaseProgressListEl.appendChild(row);
     });
 
-    var reviewCount = buildReviewDeck().length;
-    reviewEntryBtn.textContent = '🔁 Review completed flashcards & essays (' + reviewCount + ')';
+    renderCardTypeBreakdown();
+    renderReviewPipelineStatus();
+    renderSystemStatus();
+  }
+
+  // ---------- Card-type breakdown ----------
+
+  var cardTypeListEl = document.getElementById('card-type-list');
+  var CARD_TYPE_LABELS = { reading: 'Reading cards', flashcard: 'Flashcards', essay: 'Essay practice' };
+
+  function renderCardTypeBreakdown() {
+    cardTypeListEl.innerHTML = '';
+    ['reading', 'flashcard', 'essay'].forEach(function (type) {
+      var ofType = CARDS.filter(function (c) { return c.type === type; });
+      if (!ofType.length) return;
+      var done = ofType.filter(function (c) { return state.completedIds.includes(c.id); }).length;
+
+      var row = document.createElement('div');
+      row.className = 'phase-row';
+      var name = document.createElement('span');
+      name.className = 'phase-row-name';
+      name.textContent = CARD_TYPE_LABELS[type];
+      var count = document.createElement('span');
+      count.className = 'phase-row-count';
+      count.textContent = done + ' / ' + ofType.length;
+      row.appendChild(name);
+      row.appendChild(count);
+      cardTypeListEl.appendChild(row);
+    });
+  }
+
+  // ---------- Review pipeline status ----------
+  // Makes the "does completing a card actually feed the review deck" flow
+  // visible and checkable, rather than something you have to trust blindly.
+
+  var reviewPipelineStatusEl = document.getElementById('review-pipeline-status');
+
+  function statusRow(icon, label, detail) {
+    var row = document.createElement('div');
+    row.className = 'status-row';
+    row.appendChild(el('span', 'status-icon', icon));
+    var textWrap = el('div', 'status-text');
+    textWrap.appendChild(el('p', 'status-label', label));
+    if (detail) textWrap.appendChild(el('p', 'status-detail', detail));
+    row.appendChild(textWrap);
+    return row;
+  }
+
+  function renderReviewPipelineStatus() {
+    var pool = CARDS.filter(function (c) { return c.type !== 'reading'; });
+    var deck = buildReviewDeck();
+
+    reviewPipelineStatusEl.innerHTML = '';
+    if (deck.length > 0) {
+      reviewPipelineStatusEl.appendChild(statusRow('✅', 'Pipeline working',
+        deck.length + ' of ' + pool.length + ' flashcards & essay-practice cards completed — ready to review.'));
+    } else if (pool.length > 0) {
+      reviewPipelineStatusEl.appendChild(statusRow('⚪', 'Nothing to review yet',
+        '0 of ' + pool.length + ' flashcards & essay-practice cards completed. Mark one done (from Today or Browse), then check back here — this count should go up immediately.'));
+    } else {
+      reviewPipelineStatusEl.appendChild(statusRow('❌', 'No flashcards or essay cards found',
+        'This would indicate a data-loading problem, since the course should always include some.'));
+    }
+
+    var reviewCount = deck.length;
+    reviewEntryBtn.textContent = '🔁 Open review mode (' + reviewCount + ')';
     reviewEntryBtn.disabled = reviewCount === 0;
   }
+
+  // ---------- System status / diagnostics ----------
+
+  var systemStatusListEl = document.getElementById('system-status-list');
+  var runDiagnosticsBtn = document.getElementById('run-diagnostics-btn');
+
+  function renderSystemStatus() {
+    systemStatusListEl.innerHTML = '';
+
+    // Course data integrity: non-empty, unique ids, sequential order —
+    // cheap checks that would catch a broken or half-loaded data file.
+    var ids = CARDS.map(function (c) { return c.id; });
+    var idsUnique = new Set(ids).size === ids.length;
+    var ordersSequential = CARDS.every(function (c, i) { return c.order === i + 1; });
+    var dataOk = CARDS.length > 0 && idsUnique && ordersSequential;
+    systemStatusListEl.appendChild(statusRow(
+      dataOk ? '✅' : '❌',
+      'Course data',
+      dataOk
+        ? CARDS.length + ' cards loaded across ' + PHASES.length + ' phases, all valid.'
+        : 'Something is wrong with the loaded card data (count, IDs, or ordering).'
+    ));
+
+    // Glossary data.
+    var glossaryOk = GLOSSARY.length > 0;
+    systemStatusListEl.appendChild(statusRow(
+      glossaryOk ? '✅' : '❌',
+      'Glossary data',
+      glossaryOk ? GLOSSARY.length + ' terms loaded.' : 'No glossary terms loaded.'
+    ));
+
+    // localStorage read/write round trip.
+    var storageOk = false;
+    try {
+      var testKey = '__vnHistoryStorageTest__';
+      localStorage.setItem(testKey, 'ok');
+      storageOk = localStorage.getItem(testKey) === 'ok';
+      localStorage.removeItem(testKey);
+    } catch (e) {
+      storageOk = false;
+    }
+    systemStatusListEl.appendChild(statusRow(
+      storageOk ? '✅' : '❌',
+      'Local storage',
+      storageOk ? 'Progress saves and loads correctly on this device.' : 'Storage is blocked (private browsing mode can cause this) — progress will not be saved.'
+    ));
+
+    // Service worker / offline readiness — async, so it fills in a moment
+    // after the rest of the panel renders.
+    var swRow = statusRow('⏳', 'Offline mode', 'Checking…');
+    systemStatusListEl.appendChild(swRow);
+
+    if (!('serviceWorker' in navigator)) {
+      swRow.replaceWith(statusRow('❌', 'Offline mode', 'Not supported in this browser.'));
+      return;
+    }
+
+    navigator.serviceWorker.getRegistration().then(function (reg) {
+      var replacement;
+      if (navigator.serviceWorker.controller) {
+        replacement = statusRow('✅', 'Offline mode', 'Active — this page is being served from the offline cache. Airplane Mode will work.');
+      } else if (reg) {
+        replacement = statusRow('⚪', 'Offline mode', 'Registered but not controlling this page yet — reload once more to finish activating.');
+      } else {
+        replacement = statusRow('❌', 'Offline mode', 'Not registered yet. Needs a real HTTPS (or localhost) address, and one full page load.');
+      }
+      swRow.replaceWith(replacement);
+    }).catch(function () {
+      swRow.replaceWith(statusRow('❌', 'Offline mode', 'Could not check service worker status.'));
+    });
+  }
+
+  runDiagnosticsBtn.addEventListener('click', renderSystemStatus);
 
   function refreshTabBadges() {
     // placeholder for future badge counts; kept as a single refresh point
@@ -566,9 +703,9 @@
     reader: document.getElementById('view-reader'),
     glossary: document.getElementById('view-glossary'),
     review: document.getElementById('view-review'),
-    progress: document.getElementById('view-progress'),
+    dashboard: document.getElementById('view-dashboard'),
   };
-  var TAB_ALIAS = { reader: 'browse', review: 'progress' };
+  var TAB_ALIAS = { reader: 'browse', review: 'dashboard' };
 
   function showView(name) {
     Object.keys(views).forEach(function (key) {
@@ -586,7 +723,7 @@
     if (name === 'browse') renderBrowse();
     if (name === 'glossary') renderGlossary();
     if (name === 'review') renderReviewCard();
-    if (name === 'progress') refreshProgressView();
+    if (name === 'dashboard') refreshDashboard();
     document.getElementById('views').scrollTop = 0;
   }
 
@@ -597,7 +734,7 @@
   // ---------- Init ----------
 
   renderToday();
-  refreshProgressView();
+  refreshDashboard();
   showView('today');
 
   if ('serviceWorker' in navigator) {

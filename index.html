@@ -20,7 +20,7 @@
     <button class="tab-btn" data-tab="today" aria-current="page">Today</button>
     <button class="tab-btn" data-tab="browse">Browse</button>
     <button class="tab-btn" data-tab="glossary">Glossary</button>
-    <button class="tab-btn" data-tab="progress">Progress</button>
+    <button class="tab-btn" data-tab="dashboard">Dashboard</button>
   </nav>
 
   <main id="views">
@@ -77,7 +77,7 @@
     <!-- REVIEW MODE (flashcards + essay prompts you've already completed) -->
     <section id="view-review" class="view hidden" data-view="review">
       <header class="view-header view-header--reader">
-        <button id="review-back-btn" class="btn-back" aria-label="Back to Progress">← Back</button>
+        <button id="review-back-btn" class="btn-back" aria-label="Back to Dashboard">← Back</button>
         <p class="muted" id="review-counter"></p>
       </header>
       <article id="review-card" class="card"></article>
@@ -92,10 +92,10 @@
       </div>
     </section>
 
-    <!-- PROGRESS VIEW -->
-    <section id="view-progress" class="view hidden" data-view="progress">
+    <!-- DASHBOARD VIEW -->
+    <section id="view-dashboard" class="view hidden" data-view="dashboard">
       <header class="view-header">
-        <h1>Progress</h1>
+        <h1>Dashboard</h1>
       </header>
 
       <div class="stat-grid">
@@ -126,7 +126,16 @@
       <h2 class="section-title">All phases</h2>
       <div id="phase-progress-list"></div>
 
-      <button id="review-entry-btn" class="btn-secondary review-entry-btn">🔁 Review completed flashcards & essays</button>
+      <h2 class="section-title">By card type</h2>
+      <div id="card-type-list"></div>
+
+      <h2 class="section-title">Review pipeline</h2>
+      <div id="review-pipeline-status" class="status-card"></div>
+      <button id="review-entry-btn" class="btn-secondary review-entry-btn">🔁 Open review mode</button>
+
+      <h2 class="section-title">System status</h2>
+      <div id="system-status-list"></div>
+      <button id="run-diagnostics-btn" class="btn-secondary run-diagnostics-btn">🩺 Run diagnostics</button>
     </section>
 
   </main>
