@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vn-history-course-v2';
+const CACHE_NAME = 'vn-history-course-v3';
 
 const PRECACHE_URLS = [
   './',
@@ -29,21 +29,21 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Cache-first: this is a static, single-user offline course — nothing on
-// the network is ever fresher than what shipped in the last precache.
+// Network-first, falling back to cache: while online, this always serves
+// the latest deployed files and refreshes the cache in the background, so
+// content updates show up without needing a manual cache-version bump.
+// While offline, it falls back to whatever was cached on a previous visit,
+// which is what keeps the course readable with no connection at all.
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      if (cached) return cached;
-      return fetch(event.request)
-        .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
-          return response;
-        })
-        .catch(() => caches.match('./index.html'));
-    })
+    fetch(event.request)
+      .then((response) => {
+        const copy = response.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+        return response;
+      })
+      .catch(() => caches.match(event.request).then((cached) => cached || caches.match('./index.html')))
   );
 });
