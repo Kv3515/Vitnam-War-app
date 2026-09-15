@@ -281,10 +281,10 @@
       container.appendChild(blockWrap);
 
       if (card.expanded && card.expanded.length) {
-        var storyRevealBtn = document.createElement('button');
-        storyRevealBtn.className = 'reveal-btn';
-        storyRevealBtn.textContent = '📖 Read the full story';
-        container.appendChild(storyRevealBtn);
+        var storyToggleBtn = document.createElement('button');
+        storyToggleBtn.className = 'reveal-btn';
+        storyToggleBtn.textContent = '📖 Read the full story';
+        container.appendChild(storyToggleBtn);
 
         var storyWrap = el('div', 'expanded-story hidden');
         var storyLabel = el('p', 'essay-points-label', 'The fuller story');
@@ -294,9 +294,9 @@
         });
         container.appendChild(storyWrap);
 
-        storyRevealBtn.addEventListener('click', function () {
-          storyWrap.classList.remove('hidden');
-          storyRevealBtn.classList.add('hidden');
+        storyToggleBtn.addEventListener('click', function () {
+          var nowHidden = storyWrap.classList.toggle('hidden');
+          storyToggleBtn.textContent = nowHidden ? '📖 Read the full story' : '🔼 Hide the full story';
         });
       }
     } else {
