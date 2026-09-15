@@ -279,6 +279,26 @@
       blockWrap.className = 'card-body';
       renderBlocks(blockWrap, card.blocks);
       container.appendChild(blockWrap);
+
+      if (card.expanded && card.expanded.length) {
+        var storyRevealBtn = document.createElement('button');
+        storyRevealBtn.className = 'reveal-btn';
+        storyRevealBtn.textContent = '📖 Read the full story';
+        container.appendChild(storyRevealBtn);
+
+        var storyWrap = el('div', 'expanded-story hidden');
+        var storyLabel = el('p', 'essay-points-label', 'The fuller story');
+        storyWrap.appendChild(storyLabel);
+        card.expanded.forEach(function (para) {
+          storyWrap.appendChild(el('p', null, para));
+        });
+        container.appendChild(storyWrap);
+
+        storyRevealBtn.addEventListener('click', function () {
+          storyWrap.classList.remove('hidden');
+          storyRevealBtn.classList.add('hidden');
+        });
+      }
     } else {
       var body = document.createElement('div');
       body.className = 'card-body';

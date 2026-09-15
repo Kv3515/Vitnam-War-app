@@ -428,6 +428,23 @@ body {
 
 .flashcard-answer.hidden { display: none; }
 
+/* Reading cards: expanded "full story" narrative */
+.expanded-story {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.expanded-story.hidden { display: none; }
+
+.expanded-story p {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  margin: 0 0 12px;
+}
+
+.expanded-story p:last-child { margin-bottom: 0; }
+
 /* Essay practice */
 .card-type-badge.essay { background: #2c2d47; color: #9b9fe0; }
 
