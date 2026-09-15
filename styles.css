@@ -66,6 +66,86 @@ body {
 
 .muted { color: var(--ink-muted); }
 
+/* Home view (landing page) */
+.home-hero { margin-bottom: 18px; }
+
+.home-hero-title {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  margin: 0 0 10px;
+  line-height: 1.15;
+}
+
+.home-hero .muted { font-size: 0.95rem; line-height: 1.5; margin: 0; }
+
+.home-continue-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 14px;
+  padding: 18px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.home-continue-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin: 0 0 16px;
+}
+
+.home-nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.home-nav-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  text-align: left;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  color: var(--ink);
+  font-family: inherit;
+  cursor: pointer;
+  min-height: 96px;
+}
+
+.home-nav-tile:active { opacity: 0.85; }
+
+.hnt-icon { font-size: 1.4rem; }
+.hnt-title { font-weight: 700; font-size: 0.98rem; }
+.hnt-desc { font-size: 0.78rem; color: var(--ink-muted); line-height: 1.3; }
+
+.home-phase-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--phase-color, var(--accent));
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-family: inherit;
+  cursor: pointer;
+  min-height: 48px;
+}
+
+.home-phase-item:active { opacity: 0.85; }
+
+.hpi-title { font-size: 0.95rem; }
+.hpi-count { font-size: 0.85rem; color: var(--ink-muted); flex: 0 0 auto; margin-left: 10px; }
+
 /* Tab bar */
 .tabbar {
   order: 2;
@@ -142,15 +222,15 @@ body {
 
 /* Phase color accents — each phase gets its own hue so the course doesn't
    read as one long monochrome scroll; falls back to the gold accent. */
-.card, .glossary-item { --phase-color: var(--accent); }
-.card[data-phase="colonial"], .glossary-item[data-phase="colonial"] { --phase-color: #c9a227; }
-.card[data-phase="partition"], .glossary-item[data-phase="partition"] { --phase-color: #5b9bd5; }
-.card[data-phase="americanization"], .glossary-item[data-phase="americanization"] { --phase-color: #d08a3e; }
-.card[data-phase="tet"], .glossary-item[data-phase="tet"] { --phase-color: #c05a52; }
-.card[data-phase="vietnamization"], .glossary-item[data-phase="vietnamization"] { --phase-color: #9b7fd4; }
-.card[data-phase="legacy"], .glossary-item[data-phase="legacy"] { --phase-color: #5aad7a; }
-.card[data-phase="lessons"], .glossary-item[data-phase="lessons"] { --phase-color: #4fb0b0; }
-.card[data-phase="milstrat"], .glossary-item[data-phase="milstrat"] { --phase-color: #c9832f; }
+.card, .glossary-item, .home-phase-item { --phase-color: var(--accent); }
+.card[data-phase="colonial"], .glossary-item[data-phase="colonial"], .home-phase-item[data-phase="colonial"] { --phase-color: #c9a227; }
+.card[data-phase="partition"], .glossary-item[data-phase="partition"], .home-phase-item[data-phase="partition"] { --phase-color: #5b9bd5; }
+.card[data-phase="americanization"], .glossary-item[data-phase="americanization"], .home-phase-item[data-phase="americanization"] { --phase-color: #d08a3e; }
+.card[data-phase="tet"], .glossary-item[data-phase="tet"], .home-phase-item[data-phase="tet"] { --phase-color: #c05a52; }
+.card[data-phase="vietnamization"], .glossary-item[data-phase="vietnamization"], .home-phase-item[data-phase="vietnamization"] { --phase-color: #9b7fd4; }
+.card[data-phase="legacy"], .glossary-item[data-phase="legacy"], .home-phase-item[data-phase="legacy"] { --phase-color: #5aad7a; }
+.card[data-phase="lessons"], .glossary-item[data-phase="lessons"], .home-phase-item[data-phase="lessons"] { --phase-color: #4fb0b0; }
+.card[data-phase="milstrat"], .glossary-item[data-phase="milstrat"], .home-phase-item[data-phase="milstrat"] { --phase-color: #c9832f; }
 
 .card-type-badge.reading { background: color-mix(in srgb, var(--phase-color) 22%, var(--bg-elevated)); color: var(--phase-color); }
 

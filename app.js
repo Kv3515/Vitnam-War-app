@@ -418,6 +418,7 @@
 
       var group = document.createElement('div');
       group.className = 'phase-group';
+      group.id = 'browse-phase-' + phase.id;
 
       var title = document.createElement('h3');
       title.className = 'phase-group-title';
@@ -572,11 +573,7 @@
 
   reviewBackBtn.addEventListener('click', function () { showView('dashboard'); });
 
-  reviewEntryBtn.addEventListener('click', function () {
-    reviewDeck = buildReviewDeck();
-    reviewIndex = 0;
-    showView('review');
-  });
+  reviewEntryBtn.addEventListener('click', function () { openReviewMode(); });
 
   // ---------- Dashboard view ----------
 
@@ -767,10 +764,80 @@
     // so completion actions anywhere in the app update every view.
   }
 
+  // ---------- Home view (landing page) ----------
+
+  var homeContinueCardEl = document.getElementById('home-continue-card');
+  var homeStatStreakEl = document.getElementById('home-stat-streak');
+  var homeStatCompletedEl = document.getElementById('home-stat-completed');
+  var homeStatRemainingEl = document.getElementById('home-stat-remaining');
+  var homePhaseListEl = document.getElementById('home-phase-list');
+  var homeReviewBtn = document.getElementById('home-review-btn');
+  var homeReviewDescEl = document.getElementById('home-review-desc');
+
+  function renderHome() {
+    var summary = Progress.getProgressSummary(state, CARDS);
+    homeStatStreakEl.textContent = summary.streak;
+    homeStatCompletedEl.textContent = summary.completed;
+    homeStatRemainingEl.textContent = summary.remaining;
+
+    homeContinueCardEl.innerHTML = '';
+    var next = Progress.getNextCard(state, CARDS);
+    if (next) {
+      homeContinueCardEl.appendChild(el('p', 'eyebrow', phaseTitle(next.phase)));
+      homeContinueCardEl.appendChild(el('p', 'home-continue-title', next.title));
+      var continueBtn = document.createElement('button');
+      continueBtn.className = 'btn-primary';
+      continueBtn.textContent = summary.completed === 0 ? 'Start the course' : 'Continue';
+      continueBtn.onclick = function () { showView('today'); };
+      homeContinueCardEl.appendChild(continueBtn);
+    } else {
+      homeContinueCardEl.appendChild(el('p', 'eyebrow', 'All phases'));
+      homeContinueCardEl.appendChild(el('p', 'home-continue-title', "You've completed the course."));
+      var reviewFromHomeBtn = document.createElement('button');
+      reviewFromHomeBtn.className = 'btn-primary';
+      reviewFromHomeBtn.textContent = '🔁 Open review mode';
+      reviewFromHomeBtn.onclick = function () { openReviewMode(); };
+      homeContinueCardEl.appendChild(reviewFromHomeBtn);
+    }
+
+    homePhaseListEl.innerHTML = '';
+    PHASES.forEach(function (phase) {
+      var phaseCards = CARDS.filter(function (c) { return c.phase === phase.id; });
+      if (!phaseCards.length) return;
+      var done = phaseCards.filter(function (c) { return state.completedIds.includes(c.id); }).length;
+
+      var item = document.createElement('button');
+      item.className = 'home-phase-item';
+      item.setAttribute('data-phase', phase.id);
+      item.appendChild(el('span', 'hpi-title', phase.title));
+      item.appendChild(el('span', 'hpi-count', done + ' / ' + phaseCards.length));
+      item.addEventListener('click', function () { goToPhase(phase.id); });
+      homePhaseListEl.appendChild(item);
+    });
+
+    var reviewCount = buildReviewDeck().length;
+    homeReviewDescEl.textContent = reviewCount > 0
+      ? reviewCount + ' card' + (reviewCount === 1 ? '' : 's') + ' ready'
+      : 'Rapid-fire completed cards';
+  }
+
+  function openReviewMode() {
+    reviewDeck = buildReviewDeck();
+    reviewIndex = 0;
+    showView('review');
+  }
+
+  Array.prototype.slice.call(document.querySelectorAll('.home-nav-tile[data-goto]')).forEach(function (btn) {
+    btn.addEventListener('click', function () { showView(btn.getAttribute('data-goto')); });
+  });
+
+  homeReviewBtn.addEventListener('click', openReviewMode);
+
   // ---------- Tab / view navigation ----------
 
   var tabButtons = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
   var views = {
+    home: document.getElementById('view-home'),
     today: document.getElementById('view-today'),
     browse: document.getElementById('view-browse'),
     reader: document.getElementById('view-reader'),
@@ -792,12 +859,19 @@
         btn.removeAttribute('aria-current');
       }
     });
+    if (name === 'home') renderHome();
     if (name === 'today') renderToday();
     if (name === 'browse') renderBrowse();
     if (name === 'glossary') renderGlossary();
     if (name === 'review') renderReviewCard();
     if (name === 'dashboard') refreshDashboard();
     document.getElementById('views').scrollTop = 0;
+  }
+
+  function goToPhase(phaseId) {
+    showView('browse');
+    var target = document.getElementById('browse-phase-' + phaseId);
+    if (target) target.scrollIntoView({ block: 'start' });
   }
 
   tabButtons.forEach(function (btn) {
@@ -808,7 +882,7 @@
 
   renderToday();
   refreshDashboard();
-  showView('today');
+  showView('home');
 
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
