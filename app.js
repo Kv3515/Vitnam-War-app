@@ -457,8 +457,13 @@
 
   var readerCardEl = document.getElementById('reader-card');
   var readerBackBtn = document.getElementById('reader-back-btn');
+  var readerCounterEl = document.getElementById('reader-counter');
+  var readerPrevBtn = document.getElementById('reader-prev-btn');
+  var readerNextBtn = document.getElementById('reader-next-btn');
+  var readerIndex = 0;
 
   function openReader(card) {
+    readerIndex = CARDS.findIndex(function (c) { return c.id === card.id; });
     renderCardInto(readerCardEl, card);
 
     if (!state.completedIds.includes(card.id)) {
@@ -477,10 +482,22 @@
       readerCardEl.appendChild(btn);
     }
 
+    readerCounterEl.textContent = (readerIndex + 1) + ' of ' + CARDS.length;
+    readerPrevBtn.disabled = readerIndex <= 0;
+    readerNextBtn.disabled = readerIndex >= CARDS.length - 1;
+
     showView('reader');
   }
 
   readerBackBtn.addEventListener('click', function () { showView('browse'); });
+
+  readerPrevBtn.addEventListener('click', function () {
+    if (readerIndex > 0) openReader(CARDS[readerIndex - 1]);
+  });
+
+  readerNextBtn.addEventListener('click', function () {
+    if (readerIndex < CARDS.length - 1) openReader(CARDS[readerIndex + 1]);
+  });
 
   // ---------- Glossary view ----------
 

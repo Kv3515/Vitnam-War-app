@@ -714,6 +714,15 @@ body {
 
 .review-nav .btn-secondary { flex: 1; }
 
+/* Card reader (Browse -> single card, with prev/next) */
+.reader-nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.reader-nav .btn-secondary { flex: 1; }
+
 .review-entry-btn { width: 100%; margin-top: 10px; }
 .run-diagnostics-btn { width: 100%; margin-top: 10px; margin-bottom: 8px; }
 
