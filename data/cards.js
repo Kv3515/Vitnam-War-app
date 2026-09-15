@@ -1203,6 +1203,50 @@ window.CARDS_DATA = {
       "type": "reading",
       "phase": "partition",
       "order": 32,
+      "title": "Indochina After Geneva: A Country in Pieces",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Geneva didn't just draw a line on a map — it left behind a region shattered on every axis: political, military, economic, and humanitarian, with no functioning single government anywhere in Vietnam."
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "~1 million",
+              "label": "Vietnamese who moved south of the 17th parallel, many Catholic, fearing communist rule"
+            },
+            {
+              "value": "~90,000",
+              "label": "Vietminh cadres and sympathizers who regrouped north, per the accords' timetable"
+            }
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "The condition Geneva left behind",
+          "steps": [
+            "Political: two rival, unrecognized-by-each-other governments, neither elected, both claiming sole legitimacy",
+            "Military: the French Expeditionary Corps withdrawing, a fledgling ARVN barely formed, and Vietminh cadres left behind in the South awaiting the promised 1956 elections",
+            "Economic: a subsistence rice economy wrecked by eight years of war, minimal industry, and near-total dependence on external aid (French/American in the South, Chinese/Soviet in the North)",
+            "Social: a nation split roughly along religious and political lines by the population transfer, with no shared institutions left to hold it together",
+            "Humanitarian: refugee camps overwhelmed on both sides of the parallel, and a landless peasantry in the North about to be swept into forced collectivization"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "Why it matters",
+          "icon": "🧩",
+          "text": "This wasn't a country pausing before an election — it was two half-built, mutually hostile states with no shared institutions, an unworkable timeline, and outside patrons on both sides already treating the 17th parallel as a Cold War front line."
+        }
+      ],
+      "laterScholarship": null
+    },
+    {
+      "id": "c033",
+      "type": "reading",
+      "phase": "partition",
+      "order": 33,
       "title": "Two Partitions: Vietnam 1954 and India 1947",
       "blocks": [
         {
@@ -1238,10 +1282,45 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c033",
+      "id": "c034",
+      "type": "examprep",
+      "phase": "partition",
+      "order": 34,
+      "title": "Exam practice: Indochina's condition after Geneva, and the India comparison",
+      "marks": 30,
+      "question": "Describe the political, social, military, and economic condition of Indochina following the 1954 Geneva Accords. Compare this partition with that of India in 1947.",
+      "parts": [
+        {
+          "label": "Part I: Condition of Indochina after Geneva",
+          "marks": 15,
+          "points": [
+            "Political: two unrecognized, rival governments, neither elected",
+            "Military: French withdrawal, a barely-formed ARVN, Vietminh cadres left in the South",
+            "Economic and humanitarian: a war-wrecked subsistence economy, overwhelmed refugee flows, near-total dependence on external aid"
+          ]
+        },
+        {
+          "label": "Part II: Comparison with the partition of India",
+          "marks": 15,
+          "points": [
+            "Similarities: colonial withdrawal forcing a hasty line, large population movement, outside pressure shaping the border",
+            "Differences: India's partition was permanent and sovereign; Vietnam's was explicitly temporary pending 1956 elections that never came",
+            "Differences: communal/religious partition logic in India vs. Cold War ideological logic in Vietnam"
+          ]
+        }
+      ],
+      "commonErrors": [
+        "Jumping straight to the India comparison without first establishing Indochina's actual post-Geneva condition",
+        "Treating the 17th parallel as a settled international border rather than a temporary military ceasefire line",
+        "A shallow India comparison limited to \"both were partitioned,\" missing the different logic behind each"
+      ],
+      "howler": "\"Geneva accord divided Vietnam like India-Pakistan, permanently.\" (A real recorded answer — Geneva explicitly framed the line as temporary, pending 1956 elections.)"
+    },
+    {
+      "id": "c035",
       "type": "reading",
       "phase": "partition",
-      "order": 33,
+      "order": 35,
       "title": "The Making of an Unlikely President",
       "blocks": [
         {
@@ -1283,10 +1362,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c034",
+      "id": "c036",
       "type": "reading",
       "phase": "partition",
-      "order": 34,
+      "order": 36,
       "title": "Diem Crushes His Rivals, Fakes a Mandate",
       "blocks": [
         {
@@ -1330,10 +1409,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c035",
+      "id": "c037",
       "type": "reading",
       "phase": "partition",
-      "order": 35,
+      "order": 37,
       "title": "The North's Land Reform Turns to Terror",
       "blocks": [
         {
@@ -1370,10 +1449,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c036",
+      "id": "c038",
       "type": "reading",
       "phase": "partition",
-      "order": 36,
+      "order": 38,
       "title": "Diem's War on His Own People",
       "blocks": [
         {
@@ -1399,10 +1478,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c037",
+      "id": "c039",
       "type": "reading",
       "phase": "partition",
-      "order": 37,
+      "order": 39,
       "title": "Family Rule and the Birth of the Vietcong",
       "blocks": [
         {
@@ -1435,20 +1514,57 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c038",
+      "id": "c040",
       "type": "flashcard",
       "phase": "partition",
-      "order": 38,
+      "order": 40,
       "title": "Diem's Path to Power",
       "question": "Why did Bao Dai, living in exile on the French Riviera, summon Ngo Dinh Diem and name him prime minister in June 1954?",
       "answer": "With the Geneva Conference nearing a settlement that threatened his own status, Bao Dai calculated that Diem's American connections and his brother Nhu's nationalist front could draw U.S. backing to replace the fading French — so on June 18, 1954, he had Diem swear before a crucifix to defend Vietnam and made him prime minister.",
       "laterScholarship": null
     },
     {
-      "id": "c039",
+      "id": "c041",
+      "type": "examprep",
+      "phase": "partition",
+      "order": 41,
+      "title": "Exam practice: Why the Geneva settlement failed",
+      "marks": 30,
+      "question": "The Geneva Accords of 1954 promised reunification of Vietnam through nationwide elections by 1956, yet Vietnam remained divided until 1975 and war resumed within years. Analyze the external and internal factors responsible for the failure of the Geneva settlement.",
+      "parts": [
+        {
+          "label": "Part I: External factors",
+          "marks": 15,
+          "points": [
+            "US refusal to sign the accords, only \"taking note,\" and its broader containment strategy",
+            "American backing of Diem's refusal to hold the promised elections",
+            "Chinese and Soviet support sustaining Hanoi's alternative government, removing any pressure toward compromise",
+            "Cold War bipolarity turning what began as a colonial settlement into a proxy front"
+          ]
+        },
+        {
+          "label": "Part II: Internal issues",
+          "marks": 15,
+          "points": [
+            "Diem's own refusal to hold elections he and Washington believed Ho Chi Minh would win",
+            "Diem's authoritarian, family-based rule alienating South Vietnamese political and religious factions",
+            "The North's brutal land reform campaign undercutting its own claim to represent a unified national will",
+            "No shared demographic, political, or economic institutions left to knit the country back together after partition"
+          ]
+        }
+      ],
+      "commonErrors": [
+        "Treating the failure as caused only by American intervention while ignoring Diem's own decision not to hold elections",
+        "Listing US/China/USSR involvement without separating it into a distinct \"external factors\" category",
+        "Failing to distinguish external Cold War pressure from Vietnam's own internal political fractures"
+      ],
+      "howler": "\"Geneva failed because Ho Chi Minh broke the ceasefire first.\" (A real recorded answer — it was the unheld 1956 elections and Diem's non-signature, not a ceasefire violation, that unraveled the settlement.)"
+    },
+    {
+      "id": "c042",
       "type": "reading",
       "phase": "partition",
-      "order": 39,
+      "order": 42,
       "title": "Kennedy's Credibility Problem",
       "blocks": [
         {
@@ -1484,10 +1600,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c040",
+      "id": "c043",
       "type": "reading",
       "phase": "partition",
-      "order": 40,
+      "order": 43,
       "title": "Quiet Escalation, Illusory Progress",
       "blocks": [
         {
@@ -1526,10 +1642,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c041",
+      "id": "c044",
       "type": "reading",
       "phase": "partition",
-      "order": 41,
+      "order": 44,
       "title": "The Strategic Hamlet Gamble",
       "blocks": [
         {
@@ -1571,10 +1687,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c042",
+      "id": "c045",
       "type": "reading",
       "phase": "partition",
-      "order": 42,
+      "order": 45,
       "title": "Ap Bac and the Mansfield Warning",
       "blocks": [
         {
@@ -1606,10 +1722,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c043",
+      "id": "c046",
       "type": "reading",
       "phase": "partition",
-      "order": 43,
+      "order": 46,
       "title": "A Flag, a Massacre, a Monk's Fire",
       "blocks": [
         {
@@ -1648,10 +1764,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c044",
+      "id": "c047",
       "type": "reading",
       "phase": "partition",
-      "order": 44,
+      "order": 47,
       "title": "The Pagoda Raids Seal Diem's Fate",
       "blocks": [
         {
@@ -1683,10 +1799,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c045",
+      "id": "c048",
       "type": "reading",
       "phase": "partition",
-      "order": 45,
+      "order": 48,
       "title": "Washington Signals a Coup",
       "blocks": [
         {
@@ -1725,10 +1841,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c046",
+      "id": "c049",
       "type": "reading",
       "phase": "partition",
-      "order": 46,
+      "order": 49,
       "title": "Nhu's Countercoup and the Point of No Return",
       "blocks": [
         {
@@ -1764,10 +1880,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c047",
+      "id": "c050",
       "type": "reading",
       "phase": "partition",
-      "order": 47,
+      "order": 50,
       "title": "The Coup Unfolds",
       "blocks": [
         {
@@ -1800,10 +1916,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c048",
+      "id": "c051",
       "type": "reading",
       "phase": "partition",
-      "order": 48,
+      "order": 51,
       "title": "Surrender, Murder, and a Nation in Shock",
       "blocks": [
         {
@@ -1835,20 +1951,20 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c049",
+      "id": "c052",
       "type": "flashcard",
       "phase": "partition",
-      "order": 49,
+      "order": 52,
       "title": "The Death of Diem and Nhu",
       "question": "How were Ngo Dinh Diem and his brother Nhu actually killed after surrendering to the coup generals on November 2, 1963?",
       "answer": "After being picked up in an armored personnel carrier for the ride back to army headquarters, they were shot and stabbed to death by soldiers acting on a signal from General Duong Van Minh; the generals then falsely claimed the brothers had committed suicide.",
       "laterScholarship": null
     },
     {
-      "id": "c050",
+      "id": "c053",
       "type": "reading",
       "phase": "americanization",
-      "order": 50,
+      "order": 53,
       "title": "Johnson's Vow: Not on My Watch",
       "blocks": [
         {
@@ -1880,10 +1996,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c051",
+      "id": "c054",
       "type": "reading",
       "phase": "americanization",
-      "order": 51,
+      "order": 54,
       "title": "The War Is Already Slipping Away",
       "blocks": [
         {
@@ -1915,10 +2031,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c052",
+      "id": "c055",
       "type": "reading",
       "phase": "americanization",
-      "order": 52,
+      "order": 55,
       "title": "Khanh's Coup by Alarm Clock",
       "blocks": [
         {
@@ -1967,10 +2083,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c053",
+      "id": "c056",
       "type": "reading",
       "phase": "americanization",
-      "order": 53,
+      "order": 56,
       "title": "Purges, an Execution, and a Revolving Door",
       "blocks": [
         {
@@ -2008,10 +2124,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c054",
+      "id": "c057",
       "type": "reading",
       "phase": "americanization",
-      "order": 54,
+      "order": 57,
       "title": "The Secret War Behind the Tonkin Gulf",
       "blocks": [
         {
@@ -2042,10 +2158,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c055",
+      "id": "c058",
       "type": "reading",
       "phase": "americanization",
-      "order": 55,
+      "order": 58,
       "title": "The Attack That Never Happened",
       "blocks": [
         {
@@ -2097,10 +2213,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c056",
+      "id": "c059",
       "type": "reading",
       "phase": "americanization",
-      "order": 56,
+      "order": 59,
       "title": "Drafting a Blank Check for War",
       "blocks": [
         {
@@ -2135,10 +2251,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c057",
+      "id": "c060",
       "type": "reading",
       "phase": "americanization",
-      "order": 57,
+      "order": 60,
       "title": "Two No Votes, Six Years of War Powers",
       "blocks": [
         {
@@ -2178,10 +2294,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c058",
+      "id": "c061",
       "type": "reading",
       "phase": "americanization",
-      "order": 58,
+      "order": 61,
       "title": "Provocations Johnson Wouldn't Answer",
       "blocks": [
         {
@@ -2212,10 +2328,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c059",
+      "id": "c062",
       "type": "reading",
       "phase": "americanization",
-      "order": 59,
+      "order": 62,
       "title": "Pleiku: The Streetcar Finally Comes",
       "blocks": [
         {
@@ -2246,10 +2362,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c060",
+      "id": "c063",
       "type": "reading",
       "phase": "americanization",
-      "order": 60,
+      "order": 63,
       "title": "Rolling Thunder Begins",
       "blocks": [
         {
@@ -2287,10 +2403,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c061",
+      "id": "c064",
       "type": "reading",
       "phase": "americanization",
-      "order": 61,
+      "order": 64,
       "title": "First Boots on the Ground at Danang",
       "blocks": [
         {
@@ -2331,10 +2447,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c062",
+      "id": "c065",
       "type": "reading",
       "phase": "americanization",
-      "order": 62,
+      "order": 65,
       "title": "From Guard Duty to Search-and-Destroy",
       "blocks": [
         {
@@ -2374,10 +2490,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c063",
+      "id": "c066",
       "type": "reading",
       "phase": "americanization",
-      "order": 63,
+      "order": 66,
       "title": "Building an Arsenal in the Jungle",
       "blocks": [
         {
@@ -2408,10 +2524,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c064",
+      "id": "c067",
       "type": "reading",
       "phase": "americanization",
-      "order": 64,
+      "order": 67,
       "title": "The Society Underneath Was Fraying",
       "blocks": [
         {
@@ -2445,10 +2561,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c065",
+      "id": "c068",
       "type": "reading",
       "phase": "americanization",
-      "order": 65,
+      "order": 68,
       "title": "The Body-Count Strategy",
       "blocks": [
         {
@@ -2497,10 +2613,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c066",
+      "id": "c069",
       "type": "reading",
       "phase": "americanization",
-      "order": 66,
+      "order": 69,
       "title": "Operation Ranch Hand: Chemical Warfare in the Jungle",
       "blocks": [
         {
@@ -2534,10 +2650,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c067",
+      "id": "c070",
       "type": "reading",
       "phase": "americanization",
-      "order": 67,
+      "order": 70,
       "title": "An Enemy That Wouldn't Break",
       "blocks": [
         {
@@ -2575,10 +2691,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c068",
+      "id": "c071",
       "type": "reading",
       "phase": "americanization",
-      "order": 68,
+      "order": 71,
       "title": "Arriving in a War With No Front Lines",
       "blocks": [
         {
@@ -2612,10 +2728,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c069",
+      "id": "c072",
       "type": "reading",
       "phase": "americanization",
-      "order": 69,
+      "order": 72,
       "title": "Who's the Enemy, and What's It For?",
       "blocks": [
         {
@@ -2648,20 +2764,20 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c070",
+      "id": "c073",
       "type": "flashcard",
       "phase": "americanization",
-      "order": 70,
+      "order": 73,
       "title": "The Lone Dissenters on the Tonkin Gulf Resolution",
       "question": "When the Gulf of Tonkin Resolution came to a vote in Congress in August 1964, it passed the House unanimously and the Senate by 98 to 2. Which two senators cast the only votes against it?",
       "answer": "Wayne Morse of Oregon and Ernest Gruening of Alaska. Morse warned that the resolution's supporters would live to regret giving Johnson such open-ended war powers.",
       "laterScholarship": null
     },
     {
-      "id": "c071",
+      "id": "c074",
       "type": "reading",
       "phase": "tet",
-      "order": 71,
+      "order": 74,
       "title": "Ia Drang and the Attrition Gamble",
       "blocks": [
         {
@@ -2699,10 +2815,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c072",
+      "id": "c075",
       "type": "reading",
       "phase": "tet",
-      "order": 72,
+      "order": 75,
       "title": "McNamara's Fork in the Road",
       "blocks": [
         {
@@ -2738,10 +2854,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c073",
+      "id": "c076",
       "type": "reading",
       "phase": "tet",
-      "order": 73,
+      "order": 76,
       "title": "The Christmas Pause",
       "blocks": [
         {
@@ -2779,10 +2895,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c074",
+      "id": "c077",
       "type": "reading",
       "phase": "tet",
-      "order": 74,
+      "order": 77,
       "title": "Four Secret Channels, Four Dead Ends",
       "blocks": [
         {
@@ -2821,10 +2937,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c075",
+      "id": "c078",
       "type": "reading",
       "phase": "tet",
-      "order": 75,
+      "order": 78,
       "title": "McNamara Loses Faith",
       "blocks": [
         {
@@ -2852,10 +2968,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c076",
+      "id": "c079",
       "type": "reading",
       "phase": "tet",
-      "order": 76,
+      "order": 79,
       "title": "The Calm Before Tet",
       "blocks": [
         {
@@ -2881,10 +2997,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c077",
+      "id": "c080",
       "type": "reading",
       "phase": "tet",
-      "order": 77,
+      "order": 80,
       "title": "Tet Breaks Loose",
       "blocks": [
         {
@@ -2922,10 +3038,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c078",
+      "id": "c081",
       "type": "reading",
       "phase": "tet",
-      "order": 78,
+      "order": 81,
       "title": "The Embassy Raid and the Loan Photo",
       "blocks": [
         {
@@ -2964,10 +3080,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c079",
+      "id": "c082",
       "type": "reading",
       "phase": "tet",
-      "order": 79,
+      "order": 82,
       "title": "The Hue Massacre",
       "blocks": [
         {
@@ -3001,10 +3117,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c080",
+      "id": "c083",
       "type": "reading",
       "phase": "tet",
-      "order": 80,
+      "order": 83,
       "title": "Retaking Hue",
       "blocks": [
         {
@@ -3047,10 +3163,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c081",
+      "id": "c084",
       "type": "reading",
       "phase": "tet",
-      "order": 81,
+      "order": 84,
       "title": "My Lai: The Massacre America Couldn't Ignore",
       "blocks": [
         {
@@ -3101,10 +3217,60 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c082",
+      "id": "c085",
+      "type": "examprep",
+      "phase": "tet",
+      "order": 85,
+      "title": "Exam practice: My Lai and the conduct of the war",
+      "marks": 30,
+      "question": "Describe the events of the My Lai massacre of March 1968. What impact did its eventual exposure have on the conduct and perception of the war?",
+      "parts": [
+        {
+          "label": "Part I: Background",
+          "marks": 5,
+          "points": [
+            "Search-and-destroy operations targeting an alleged VC battalion believed hiding in Son My village",
+            "A climate of dehumanization common to designated free-fire zones"
+          ]
+        },
+        {
+          "label": "Part II: The incident",
+          "marks": 10,
+          "points": [
+            "Lieutenant Calley's company killing hundreds of unarmed women, children, and elderly villagers",
+            "Helicopter pilot Hugh Thompson's intervention, threatening his own men to stop further killing"
+          ]
+        },
+        {
+          "label": "Part III: Cover-up and exposure",
+          "marks": 5,
+          "points": [
+            "The Army's internal cover-up lasting more than a year",
+            "Seymour Hersh's reporting in November 1969 finally breaking the story nationally"
+          ]
+        },
+        {
+          "label": "Part IV: Impact on the war's conduct and perception",
+          "marks": 10,
+          "points": [
+            "Fueled the antiwar movement and eroded public trust in official accounts of the war",
+            "Forced scrutiny of rules of engagement and command responsibility doctrine",
+            "Calley's conviction and Nixon's intervention became a lasting flashpoint over accountability"
+          ]
+        }
+      ],
+      "commonErrors": [
+        "The examiner's named trap: getting the timeline wrong — the massacre's impact on the war's conduct and public opinion could only begin after Hersh's November 1969 exposure, not from March 1968 itself; this question was attempted by nearly all candidates, and many lost marks purely on this sequencing error",
+        "Vague, imprecise casualty and timeline details instead of the specific chronology",
+        "Describing the massacre alone without addressing the second half of the question — its impact on the war's conduct and perception"
+      ],
+      "howler": "\"My Lai happened in 1969 and was shown live on TV.\" (A real recorded answer that conflates the massacre's 1968 date with its 1969 exposure — and there was no live broadcast; Hersh's reporting was print journalism.)"
+    },
+    {
+      "id": "c086",
       "type": "reading",
       "phase": "tet",
-      "order": 82,
+      "order": 86,
       "title": "Khe Sanh: The Ghost of Dien Bien Phu",
       "blocks": [
         {
@@ -3142,10 +3308,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c083",
+      "id": "c087",
       "type": "reading",
       "phase": "tet",
-      "order": 83,
+      "order": 87,
       "title": "The Diversion That Fooled Westmoreland",
       "blocks": [
         {
@@ -3172,10 +3338,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c084",
+      "id": "c088",
       "type": "reading",
       "phase": "tet",
-      "order": 84,
+      "order": 88,
       "title": "Giap's Gamble: What Hanoi Actually Wanted",
       "blocks": [
         {
@@ -3205,10 +3371,10 @@ window.CARDS_DATA = {
       "laterScholarship": "Karnow describes Tet largely through its American political fallout. Later scholarship drawing on Vietnamese sources — again Lien-Hang T. Nguyen's Hanoi's War — shows the offensive was pushed through by Le Duan over real internal skepticism (General Giap was away from Hanoi for much of the planning), and that its actual goal was to trigger a general uprising and topple the Saigon government outright, not merely to shock American public opinion. Internal Hanoi assessments afterward were far more self-critical of the offensive's heavy losses and military failure than the later, simplified story of a masterstroke suggests."
     },
     {
-      "id": "c085",
+      "id": "c089",
       "type": "reading",
       "phase": "tet",
-      "order": 85,
+      "order": 89,
       "title": "Two Miscalculations",
       "blocks": [
         {
@@ -3238,10 +3404,54 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c086",
+      "id": "c090",
+      "type": "examprep",
+      "phase": "tet",
+      "order": 90,
+      "title": "Exam practice: The Tet Offensive — objectives, victory, and defeat",
+      "marks": 50,
+      "question": "Discuss the objectives of the Tet Offensive of 1968 from the North Vietnamese perspective. Critically analyze whether Tet was a military or political victory or defeat for each side.",
+      "parts": [
+        {
+          "label": "Part I: Hanoi's actual objectives",
+          "marks": 20,
+          "points": [
+            "Trigger a general uprising and mass ARVN defections in the South",
+            "Shock American public opinion into questioning the war ahead of the 1968 election",
+            "Seize enough ground and initiative to force a coalition government or a negotiated settlement — not to permanently hold captured cities"
+          ]
+        },
+        {
+          "label": "Part II: Military outcome",
+          "marks": 15,
+          "points": [
+            "Communist forces suffered catastrophic losses — an estimated 50,000+ dead within weeks",
+            "No city beyond Hue was held for long, and no uprising or ARVN collapse materialized",
+            "By conventional military measures, a clear defeat for Hanoi"
+          ]
+        },
+        {
+          "label": "Part III: Political outcome",
+          "marks": 15,
+          "points": [
+            "Cronkite's \"stalemate\" broadcast and the Wise Men's reversal of confidence",
+            "Johnson's withdrawal from the 1968 race",
+            "The surprise itself shattered Westmoreland's public \"light at the end of the tunnel\" narrative — a decisive American political defeat despite the battlefield result"
+          ]
+        }
+      ],
+      "commonErrors": [
+        "The single most common trap: describing captured targets (the Embassy, Hue, Khe Sanh) in narrative detail instead of stating and analyzing Hanoi's actual strategic objectives",
+        "The second trap: narrating the battles blow-by-blow instead of explicitly weighing victory or defeat for each side on both the military and political planes",
+        "Declaring one unqualified \"winner\" instead of the accurate paradox: military defeat, political victory, for Hanoi"
+      ],
+      "howler": "\"Tet was a total victory because Vietcong captured the US Embassy.\" (A real recorded answer — the Embassy compound was breached for hours, not captured or held, and this framing ignores the far larger military defeat Communist forces suffered.)"
+    },
+    {
+      "id": "c091",
       "type": "reading",
       "phase": "tet",
-      "order": 86,
+      "order": 91,
       "title": "Cronkite Says Stalemate",
       "blocks": [
         {
@@ -3263,10 +3473,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c087",
+      "id": "c092",
       "type": "reading",
       "phase": "tet",
-      "order": 87,
+      "order": 92,
       "title": "The Wise Men Turn",
       "blocks": [
         {
@@ -3308,10 +3518,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c088",
+      "id": "c093",
       "type": "reading",
       "phase": "tet",
-      "order": 88,
+      "order": 93,
       "title": "The Political Trap Closes",
       "blocks": [
         {
@@ -3346,10 +3556,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c089",
+      "id": "c094",
       "type": "reading",
       "phase": "tet",
-      "order": 89,
+      "order": 94,
       "title": "I Shall Not Seek Re-election",
       "blocks": [
         {
@@ -3375,20 +3585,20 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c090",
+      "id": "c095",
       "type": "flashcard",
       "phase": "tet",
-      "order": 90,
+      "order": 95,
       "title": "The Tet Offensive — quick recall",
       "question": "Militarily, the Tet Offensive was a heavy defeat for the Communists — they failed to hold any city and suffered enormous casualties. So why is it remembered as the war's turning point?",
       "answer": "Because it shattered American confidence at home. Years of official assurances that the enemy was being worn down were suddenly contradicted by an attack that reached the U.S. embassy in Saigon itself — collapsing public and elite support for the war (symbolized by Walter Cronkite's on-air pessimism and the \"wise men\" reversing themselves) and directly leading to Johnson's decision not to seek re-election.",
       "laterScholarship": null
     },
     {
-      "id": "c091",
+      "id": "c096",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 91,
+      "order": 96,
       "title": "The Madman Theory",
       "blocks": [
         {
@@ -3417,10 +3627,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c092",
+      "id": "c097",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 92,
+      "order": 97,
       "title": "Kissinger Takes the Wheel",
       "blocks": [
         {
@@ -3467,10 +3677,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c093",
+      "id": "c098",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 93,
+      "order": 98,
       "title": "Vietnamization: Shifting the Burden",
       "blocks": [
         {
@@ -3496,10 +3706,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c094",
+      "id": "c099",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 94,
+      "order": 99,
       "title": "The Phoenix Program: Targeting the Vietcong's Shadow Government",
       "blocks": [
         {
@@ -3548,10 +3758,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c095",
+      "id": "c100",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 95,
+      "order": 100,
       "title": "The Draft: Who Fought, and Who Didn't",
       "blocks": [
         {
@@ -3585,10 +3795,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c096",
+      "id": "c101",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 96,
+      "order": 101,
       "title": "Ho Chi Minh's Death and the Silent Majority",
       "blocks": [
         {
@@ -3641,10 +3851,10 @@ window.CARDS_DATA = {
       "laterScholarship": "Karnow's account, written in 1983, still centers Ho Chi Minh as Hanoi's guiding hand throughout the war. Later research using Vietnamese party archives — notably Lien-Hang T. Nguyen's Hanoi's War (2012) — established that by the mid-1960s Ho was largely a symbolic elder statesman in declining health, sidelined within the leadership by Le Duan, the Party's First Secretary since 1959. It was Le Duan and his ally Le Duc Tho who drove Hanoi's most consequential wartime decisions, pushing aggressive military pressure in the South over the more cautious, North-first approach some older leaders preferred."
     },
     {
-      "id": "c097",
+      "id": "c102",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 97,
+      "order": 102,
       "title": "The Secret Bombing of Cambodia",
       "blocks": [
         {
@@ -3673,10 +3883,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c098",
+      "id": "c103",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 98,
+      "order": 103,
       "title": "Invasion and Backlash: Kent State",
       "blocks": [
         {
@@ -3716,10 +3926,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c099",
+      "id": "c104",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 99,
+      "order": 104,
       "title": "The Secret Channel: Kissinger Meets Le Duc Tho",
       "blocks": [
         {
@@ -3754,10 +3964,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c100",
+      "id": "c105",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 100,
+      "order": 105,
       "title": "The Standstill Gambit",
       "blocks": [
         {
@@ -3784,10 +3994,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c101",
+      "id": "c106",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 101,
+      "order": 106,
       "title": "Lam Son 719: Vietnamization's Big Test",
       "blocks": [
         {
@@ -3826,10 +4036,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c102",
+      "id": "c107",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 102,
+      "order": 107,
       "title": "A Military in Collapse",
       "blocks": [
         {
@@ -3874,10 +4084,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c103",
+      "id": "c108",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 103,
+      "order": 108,
       "title": "Triangulating with Beijing and Moscow",
       "blocks": [
         {
@@ -3902,10 +4112,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c104",
+      "id": "c109",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 104,
+      "order": 109,
       "title": "Hanoi's Betrayal",
       "blocks": [
         {
@@ -3931,10 +4141,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c105",
+      "id": "c110",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 105,
+      "order": 110,
       "title": "The Easter Offensive Begins",
       "blocks": [
         {
@@ -3976,10 +4186,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c106",
+      "id": "c111",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 106,
+      "order": 111,
       "title": "Nixon's Gamble",
       "blocks": [
         {
@@ -4018,10 +4228,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c107",
+      "id": "c112",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 107,
+      "order": 112,
       "title": "Peace Is at Hand... Or Is It?",
       "blocks": [
         {
@@ -4051,10 +4261,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c108",
+      "id": "c113",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 108,
+      "order": 113,
       "title": "The Christmas Bombing and the Paris Accords",
       "blocks": [
         {
@@ -4101,10 +4311,10 @@ window.CARDS_DATA = {
       "laterScholarship": "Karnow reconstructs the Paris negotiations mainly from the American side, especially Kissinger's own account. Pierre Asselin's A Bitter Peace (2002), drawing on newly available Vietnamese as well as American and Canadian archives, showed that Hanoi's decision to sign in January 1973 was its own difficult, deliberated choice — driven by economic exhaustion and the overriding need to get American forces out — rather than simply a response dictated by Washington's pressure or the Christmas bombing."
     },
     {
-      "id": "c109",
+      "id": "c114",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 109,
+      "order": 114,
       "title": "The Paris Accords: Provisions at a Glance",
       "blocks": [
         {
@@ -4145,10 +4355,45 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c110",
+      "id": "c115",
+      "type": "examprep",
+      "phase": "vietnamization",
+      "order": 115,
+      "title": "Exam practice: The Paris Peace Accords, 1973",
+      "marks": 20,
+      "question": "Discuss the key provisions of the Paris Peace Accords of January 1973 and explain why they failed to produce a lasting peace in Vietnam.",
+      "parts": [
+        {
+          "label": "Part I: Key provisions",
+          "marks": 10,
+          "points": [
+            "An in-place cease-fire, both sides keeping the territory they currently held",
+            "Complete US troop withdrawal within 60 days and exchange of all POWs",
+            "A National Council of Reconciliation to organize eventual elections; the DMZ reaffirmed as provisional"
+          ]
+        },
+        {
+          "label": "Part II: Why they failed",
+          "marks": 10,
+          "points": [
+            "No enforcement mechanism for the cease-fire",
+            "North Vietnamese troops already inside South Vietnam were explicitly permitted to remain in place",
+            "Both Hanoi and Saigon treated the pause as a chance to rearm rather than a real peace, leading to the 1975 offensive"
+          ]
+        }
+      ],
+      "commonErrors": [
+        "The #1 recorded error: confusing the 1973 Paris Peace Accords with the 1954 Geneva Accords — two separate agreements, two decades apart, ending different wars, with different signatories and provisions",
+        "Describing the Accords' provisions without addressing why they specifically failed to hold",
+        "Omitting that, unlike Geneva 1954, NVA troops already inside South Vietnam were explicitly permitted to remain in place"
+      ],
+      "howler": "\"The Paris Accords of 1973 partitioned Vietnam at the 17th parallel.\" (A real recorded answer confusing Paris 1973 with Geneva 1954 — the 17th-parallel partition was a Geneva provision two decades earlier; Paris merely reaffirmed the DMZ as provisional.)"
+    },
+    {
+      "id": "c116",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 110,
+      "order": 116,
       "title": "Rearming Under the Cease-Fire",
       "blocks": [
         {
@@ -4186,10 +4431,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c111",
+      "id": "c117",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 111,
+      "order": 117,
       "title": "Watergate and the Silence from Washington",
       "blocks": [
         {
@@ -4220,10 +4465,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c112",
+      "id": "c118",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 112,
+      "order": 118,
       "title": "Banmethuot: A Fatal Miscalculation",
       "blocks": [
         {
@@ -4254,10 +4499,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c113",
+      "id": "c119",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 113,
+      "order": 119,
       "title": "The Cities Fall",
       "blocks": [
         {
@@ -4288,10 +4533,10 @@ window.CARDS_DATA = {
       "laterScholarship": "Karnow describes the 1975 collapse largely as it appeared from Saigon and Washington. Later access to Hanoi's own official military history (translated by Merle Pribbenow as Victory in Vietnam) showed that the North Vietnamese Politburo had actually planned a slower, roughly two-year campaign, aiming for a decisive blow in 1976. It was the unexpectedly easy capture of Phuoc Long province in January 1975 — and Washington's failure to respond — that convinced Hanoi's leaders to accelerate to one all-out campaign, which then snowballed into South Vietnam's collapse within weeks."
     },
     {
-      "id": "c114",
+      "id": "c120",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 114,
+      "order": 120,
       "title": "Xuan Loc's Last Stand",
       "blocks": [
         {
@@ -4312,10 +4557,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c115",
+      "id": "c121",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 115,
+      "order": 121,
       "title": "Operation Frequent Wind",
       "blocks": [
         {
@@ -4353,10 +4598,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c116",
+      "id": "c122",
       "type": "reading",
       "phase": "vietnamization",
-      "order": 116,
+      "order": 122,
       "title": "The War's Final Toll",
       "blocks": [
         {
@@ -4400,30 +4645,30 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c117",
+      "id": "c123",
       "type": "flashcard",
       "phase": "vietnamization",
-      "order": 117,
+      "order": 123,
       "title": "The Paris Accords and their collapse — quick recall",
       "question": "The January 1973 Paris Peace Accords let American troops leave Vietnam, but they did not require one crucial thing that virtually guaranteed the war would resume. What was missing?",
       "answer": "The accords did not require North Vietnamese troops already inside South Vietnam to withdraw — both sides' forces could remain wherever they already stood (a \"leopard spot\" arrangement). With no enforcement mechanism and Communist troops still in place, both sides used the cease-fire to rearm rather than make peace.",
       "laterScholarship": null
     },
     {
-      "id": "c118",
+      "id": "c124",
       "type": "flashcard",
       "phase": "vietnamization",
-      "order": 118,
+      "order": 124,
       "title": "The final collapse — quick recall",
       "question": "Hanoi's Politburo originally planned a slow, two-year campaign to defeat South Vietnam, aiming for final victory around 1976. What made them abandon that timetable and rush straight for Saigon in the spring of 1975?",
       "answer": "The unexpectedly easy capture of Phuoc Long province in January 1975 — and Washington's near-total silence in response — convinced Hanoi's leaders the United States would not intervene again. When Thieu's chaotic withdrawal from the central highlands then triggered a rapid collapse down the coast (Hue, then Danang), Communist leaders scrapped the original timetable and ordered an immediate drive on Saigon before the rainy season.",
       "laterScholarship": null
     },
     {
-      "id": "c119",
+      "id": "c125",
       "type": "reading",
       "phase": "legacy",
-      "order": 119,
+      "order": 125,
       "title": "The Peace Vietnam Couldn't Afford",
       "blocks": [
         {
@@ -4451,10 +4696,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c120",
+      "id": "c126",
       "type": "reading",
       "phase": "legacy",
-      "order": 120,
+      "order": 126,
       "title": "A Government That Couldn't Feed Its People",
       "blocks": [
         {
@@ -4480,10 +4725,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c121",
+      "id": "c127",
       "type": "reading",
       "phase": "legacy",
-      "order": 121,
+      "order": 127,
       "title": "Victors and Vanquished",
       "blocks": [
         {
@@ -4512,10 +4757,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c122",
+      "id": "c128",
       "type": "reading",
       "phase": "legacy",
-      "order": 122,
+      "order": 128,
       "title": "Wasting the Best Talent",
       "blocks": [
         {
@@ -4537,10 +4782,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c123",
+      "id": "c129",
       "type": "reading",
       "phase": "legacy",
-      "order": 123,
+      "order": 129,
       "title": "Nearly a Million Fled by Sea",
       "blocks": [
         {
@@ -4568,10 +4813,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c124",
+      "id": "c130",
       "type": "reading",
       "phase": "legacy",
-      "order": 124,
+      "order": 130,
       "title": "The Price of Escape",
       "blocks": [
         {
@@ -4593,10 +4838,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c125",
+      "id": "c131",
       "type": "reading",
       "phase": "legacy",
-      "order": 125,
+      "order": 131,
       "title": "Two Dominoes Fall",
       "blocks": [
         {
@@ -4629,10 +4874,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c126",
+      "id": "c132",
       "type": "reading",
       "phase": "legacy",
-      "order": 126,
+      "order": 132,
       "title": "Year Zero",
       "blocks": [
         {
@@ -4662,20 +4907,20 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c127",
+      "id": "c133",
       "type": "flashcard",
       "phase": "legacy",
-      "order": 127,
+      "order": 133,
       "title": "Legacy and aftermath — quick recall",
       "question": "After 1975, roughly how many South Vietnamese officials, officers, and professionals were sent to Vietnam's \"re-education\" camps, and what mistake did this cost the new government, according to Karnow?",
       "answer": "About 400,000 people were sent to the camps. It cost the government many of the trained doctors, engineers, and administrators it desperately needed to rebuild the country — as one Vietcong-veteran-turned-doctor put it, \"we are wasting our best talent.\"",
       "laterScholarship": null
     },
     {
-      "id": "c128",
+      "id": "c134",
       "type": "reading",
       "phase": "milstrat",
-      "order": 128,
+      "order": 134,
       "title": "Vietnam's Geography and Its Military Logic",
       "blocks": [
         {
@@ -4708,10 +4953,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c129",
+      "id": "c135",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 129,
+      "order": 135,
       "title": "Exam practice: Geography's military logic",
       "marks": 30,
       "question": "The whole construct of military operations is deeply affected by the geography of a region. Examine the macro-geography of Vietnam and its implications for military operations on both sides.",
@@ -4744,10 +4989,10 @@ window.CARDS_DATA = {
       "howler": "\"Vietnam has good beaches which is why American soldiers were happy to be there.\" (A real recorded answer — geography questions want operational implications, not tourism.)"
     },
     {
-      "id": "c130",
+      "id": "c136",
       "type": "reading",
       "phase": "milstrat",
-      "order": 130,
+      "order": 136,
       "title": "Sun Tzu's Art of War: The Lens Historians Apply to Vietnam",
       "blocks": [
         {
@@ -4780,10 +5025,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c131",
+      "id": "c137",
       "type": "reading",
       "phase": "milstrat",
-      "order": 131,
+      "order": 137,
       "title": "Sun Tzu's \"The Earth\": Terrain as a Weapon",
       "blocks": [
         {
@@ -4819,10 +5064,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c132",
+      "id": "c138",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 132,
+      "order": 138,
       "title": "Exam practice: Sun Tzu's Earth factor",
       "marks": 20,
       "question": "Briefly explain, with examples, the relevance of Sun Tzu's teachings in the US-Vietnam War, with particular reference to \"The Earth\" — one of the principal factors for laying plans.",
@@ -4854,10 +5099,10 @@ window.CARDS_DATA = {
       "howler": null
     },
     {
-      "id": "c133",
+      "id": "c139",
       "type": "reading",
       "phase": "milstrat",
-      "order": 133,
+      "order": 139,
       "title": "The Three Stages of People's War",
       "blocks": [
         {
@@ -4892,10 +5137,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c134",
+      "id": "c140",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 134,
+      "order": 140,
       "title": "Exam practice: The Three Stages doctrine",
       "marks": 20,
       "question": "The VC/NVA strategy throughout the war was predominantly influenced by what the Chinese called the theory of Three-Stage Guerrilla Warfare. Briefly explain, and illustrate each stage with a specific example from the Vietnam wars.",
@@ -4926,10 +5171,10 @@ window.CARDS_DATA = {
       "howler": null
     },
     {
-      "id": "c135",
+      "id": "c141",
       "type": "reading",
       "phase": "milstrat",
-      "order": 135,
+      "order": 141,
       "title": "Navarre's Gamble: The Five-Point Plan",
       "blocks": [
         {
@@ -4957,10 +5202,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c136",
+      "id": "c142",
       "type": "reading",
       "phase": "milstrat",
-      "order": 136,
+      "order": 142,
       "title": "Operations Castor and Atlante",
       "blocks": [
         {
@@ -4996,10 +5241,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c137",
+      "id": "c143",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 137,
+      "order": 143,
       "title": "Exam practice: Navarre's plan, verdict",
       "marks": 30,
       "question": "Give out the major aspects of Navarre's Five-Point Plan and assess how far it succeeded. Cover Operations Castor and Atlante in this light.",
@@ -5038,10 +5283,10 @@ window.CARDS_DATA = {
       "howler": "\"Navarre's plan succeeded because France won the Battle of Dien Bien Phu.\" (France lost it — decisively, in May 1954.)"
     },
     {
-      "id": "c138",
+      "id": "c144",
       "type": "reading",
       "phase": "milstrat",
-      "order": 138,
+      "order": 144,
       "title": "The Battle of Red River Delta, 1951: Giap's First Defeat",
       "blocks": [
         {
@@ -5054,7 +5299,7 @@ window.CARDS_DATA = {
           "items": [
             {
               "when": "January 1951",
-              "text": "Giap attacks the fortified De Lattre Line at Vinh Yen in massed conventional assaults — French napalm, used for the first time in Indochina, devastates his forces."
+              "text": "Giap attacks the fortified De Lattre Line at Vinh Yen in massed conventional assaults — French napalm, used here for the first time at large, decisive scale (a smaller strike had come earlier at Tien Yen in 1950), devastates his forces."
             },
             {
               "when": "March 1951",
@@ -5070,8 +5315,8 @@ window.CARDS_DATA = {
           "type": "stats",
           "items": [
             {
-              "value": "Est. 6,000-20,000+",
-              "label": "Vietminh dead across the three battles, for no territorial gain"
+              "value": "Heavy losses",
+              "label": "Vietminh dead across the three battles, for no territorial gain — Western and Vietnamese-official sources diverge sharply on the total, so treat any single precise figure with caution"
             }
           ]
         },
@@ -5085,10 +5330,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c139",
+      "id": "c145",
       "type": "reading",
       "phase": "milstrat",
-      "order": 139,
+      "order": 145,
       "title": "Giap and Sun Tzu: Where the Student Broke the Rules",
       "blocks": [
         {
@@ -5123,10 +5368,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c140",
+      "id": "c146",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 140,
+      "order": 146,
       "title": "Exam practice: Giap's Red River dilemma",
       "marks": 50,
       "question": "Though an ardent follower of Sun Tzu, Giap flouted several of his principles in the Battle of the Red River Delta. Explain the dilemma Giap faced and the errors he committed during the battle.",
@@ -5165,10 +5410,10 @@ window.CARDS_DATA = {
       "howler": "\"Giap lost because his soldiers were tired from walking through the jungle.\" (The defeat came from attacking fortified positions on open ground against napalm and artillery — not fatigue.)"
     },
     {
-      "id": "c141",
+      "id": "c147",
       "type": "reading",
       "phase": "milstrat",
-      "order": 141,
+      "order": 147,
       "title": "The Iron Triangle: Tactical Wins, No Strategic Victory",
       "blocks": [
         {
@@ -5198,10 +5443,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c142",
+      "id": "c148",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 142,
+      "order": 148,
       "title": "Exam practice: Iron Triangle, tactical vs. strategic",
       "marks": 30,
       "question": "Heavy bombing combined with carefully planned tactical operations brought success to US forces in Vietnam, especially in 1967-68, yet tactical triumphs failed to yield strategic victory. Explain this statement against the backdrop of the Battle for the Iron Triangle.",
@@ -5232,10 +5477,10 @@ window.CARDS_DATA = {
       "howler": null
     },
     {
-      "id": "c143",
+      "id": "c149",
       "type": "reading",
       "phase": "milstrat",
-      "order": 143,
+      "order": 149,
       "title": "Grading the Air War: Efficacy and Hanoi's Countermeasures",
       "blocks": [
         {
@@ -5275,10 +5520,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c144",
+      "id": "c150",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 144,
+      "order": 150,
       "title": "Exam practice: Air power's limits",
       "marks": 50,
       "question": "The War in Vietnam saw an unprecedented air campaign of attrition waged by the US. Briefly discuss the efficacy of the US Air Campaign in attaining overall strategic objectives, the countermeasures employed by North Vietnam against it, and the relevance of terrain in the campaign as it played out in Vietnam.",
@@ -5293,7 +5538,7 @@ window.CARDS_DATA = {
         },
         {
           "label": "Part II: Effect on the overall strategic objective",
-          "marks": 15,
+          "marks": 10,
           "points": [
             "Effect on the North Vietnamese government's resolve and the population",
             "Effect on infrastructure and public opinion, in North Vietnam and internationally"
@@ -5301,27 +5546,37 @@ window.CARDS_DATA = {
         },
         {
           "label": "Part III: Countermeasures used by North Vietnam",
-          "marks": 15,
+          "marks": 10,
           "points": [
             "Air defense and dispersal of supply dumps",
             "Repair and reconstruction capacity",
             "Reliance on manpower-based logistics over mechanized transport"
           ]
+        },
+        {
+          "label": "Part IV: Relevance of terrain to the air campaign",
+          "marks": 10,
+          "points": [
+            "Triple-canopy jungle concealed roads, truck parks, and troop movements from visual and even radar-guided targeting",
+            "Karst limestone terrain along the Trail's Laos/Cambodia stretches gave natural cave and tunnel cover for supply caches and repair crews",
+            "Monsoon cloud cover grounded or degraded visual bombing for months at a time, forcing reliance on less accurate all-weather systems",
+            "Vietnam's compartmentalized valley-and-ridge geography meant no single chokepoint existed that bombing could sever to end infiltration"
+          ]
         }
       ],
       "commonErrors": [
         "Bringing out general statistics of various bombing operations instead of analyzing planned strategy and effect at the strategic level",
-        "Failure to bring out the relevance of terrain to the implementation of the bombing campaign",
+        "Naming terrain as an error to avoid without actually explaining which terrain features blunted the campaign",
         "Treating 'more bombs dropped' as self-evidently significant without connecting it to strategic effect",
         "Omitting North Vietnam's countermeasures entirely and only describing the American side"
       ],
       "howler": "\"These bombings were wings to the air campaign.\" (A real recorded answer that says nothing about strategy, effect, or countermeasures.)"
     },
     {
-      "id": "c145",
+      "id": "c151",
       "type": "reading",
       "phase": "milstrat",
-      "order": 145,
+      "order": 151,
       "title": "Thailand: The Silent Base",
       "blocks": [
         {
@@ -5346,8 +5601,12 @@ window.CARDS_DATA = {
           "type": "stats",
           "items": [
             {
-              "value": "~11,000-12,000",
-              "label": "Thai troops served in South Vietnam (\"Queen's Cobra\"/Black Panther Division)"
+              "value": "~11,000-12,000 in-country",
+              "label": "Thai troop strength in South Vietnam at any one time (\"Queen's Cobra\"/Black Panther Division), c. 1969 peak"
+            },
+            {
+              "value": "~40,000+",
+              "label": "Total Thai personnel who rotated through South Vietnam over the course of the war"
             }
           ]
         },
@@ -5361,10 +5620,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c146",
+      "id": "c152",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 146,
+      "order": 152,
       "title": "Exam practice: Thailand's hidden war",
       "marks": 30,
       "question": "What role did Thailand play as a base for the United States during the Vietnam War, and why was Thailand willing to play it?",
@@ -5396,10 +5655,10 @@ window.CARDS_DATA = {
       "howler": "\"American soldiers were happy to be launched from the beautiful beaches of Thailand.\" (A real recorded answer — the question wants strategic role, not tourism.)"
     },
     {
-      "id": "c147",
+      "id": "c153",
       "type": "reading",
       "phase": "milstrat",
-      "order": 147,
+      "order": 153,
       "title": "The Ho Chi Minh Trail as a Logistics System",
       "blocks": [
         {
@@ -5433,10 +5692,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c148",
+      "id": "c154",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 148,
+      "order": 154,
       "title": "Exam practice: Interdicting the Trail",
       "marks": 30,
       "question": "The DMZ imposed severe restrictions on the North Vietnamese need for logistics support to sustain operations in South Vietnam. Explain the measures taken to operationalize the Ho Chi Minh Trail as a logistics system, and the actions taken by US and South Vietnamese forces to destroy this infrastructure — covering Operation Barrel Roll in brief.",
@@ -5454,6 +5713,7 @@ window.CARDS_DATA = {
           "marks": 15,
           "points": [
             "Operation Barrel Roll's aims and methods",
+            "Lam Son 719 (1971) as the major ground attempt to cut the Trail inside Laos — see the dedicated card on its outcome",
             "Why interdiction largely failed: canopy concealment, redundant routes, rapid repair capacity"
           ]
         },
@@ -5473,10 +5733,10 @@ window.CARDS_DATA = {
       "howler": null
     },
     {
-      "id": "c149",
+      "id": "c155",
       "type": "reading",
       "phase": "milstrat",
-      "order": 149,
+      "order": 155,
       "title": "The Montagnards: Washington's Highland Allies",
       "blocks": [
         {
@@ -5485,7 +5745,7 @@ window.CARDS_DATA = {
         },
         {
           "type": "p",
-          "text": "Beginning in 1961, US Army Special Forces recruited, armed, and trained large numbers of Montagnards through the CIDG (Civilian Irregular Defense Group) program, exploiting their jungle skills and local knowledge — and their historic distrust of ethnic Vietnamese on both sides."
+          "text": "The CIA initiated the CIDG (Civilian Irregular Defense Group) program in December 1961, recruiting, arming, and training Montagnards in the Highlands; U.S. Army Special Forces joined the effort in February 1962 and gradually took over as the program expanded, exploiting the tribes' jungle skills and local knowledge — and their historic distrust of ethnic Vietnamese on both sides."
         },
         {
           "type": "callout",
@@ -5503,10 +5763,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c150",
+      "id": "c156",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 150,
+      "order": 156,
       "title": "Exam practice: Montagnards' divided loyalty",
       "marks": 20,
       "question": "Who were the Montagnards, and what role did they play in the Vietnam War? Address their relationship with the French, the Diem regime, and the United States.",
@@ -5535,10 +5795,10 @@ window.CARDS_DATA = {
       "howler": "\"Montagnards used to eat mountains, sleep mountains, and drink mountains.\" (A real recorded answer with no actual content.)"
     },
     {
-      "id": "c151",
+      "id": "c157",
       "type": "reading",
       "phase": "milstrat",
-      "order": 151,
+      "order": 157,
       "title": "Op Plan 34 Alpha: The Covert War Before the Overt One",
       "blocks": [
         {
@@ -5572,10 +5832,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c152",
+      "id": "c158",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 152,
+      "order": 158,
       "title": "Exam practice: Op 34A's real objective",
       "marks": 20,
       "question": "What was Operation Plan 34 Alpha? How far did it meet its objectives?",
@@ -5606,10 +5866,10 @@ window.CARDS_DATA = {
       "howler": "\"Op Plan 34 Alpha was made by Giap to kill 18 American soldiers on the 18th of August.\" (A real recorded answer — 34A was a US-directed program against North Vietnam, not a North Vietnamese plan.)"
     },
     {
-      "id": "c153",
+      "id": "c159",
       "type": "reading",
       "phase": "milstrat",
-      "order": 153,
+      "order": 159,
       "title": "The Son Tay Raid: A Perfect Mission, an Empty Prison",
       "blocks": [
         {
@@ -5636,10 +5896,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c154",
+      "id": "c160",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 154,
+      "order": 160,
       "title": "Exam practice: Son Tay — success or failure?",
       "marks": 20,
       "question": "Write a short note on the Son Tay Raid. Was it a success or a failure, and why?",
@@ -5664,10 +5924,10 @@ window.CARDS_DATA = {
       "howler": "\"Son Tay was a Viet Cong officers' mess where they came for drinks at night.\" (A real recorded answer — Son Tay was a North Vietnamese POW camp targeted by an American raid.)"
     },
     {
-      "id": "c155",
+      "id": "c161",
       "type": "reading",
       "phase": "milstrat",
-      "order": 155,
+      "order": 161,
       "title": "Self-Imposed Restrictions: Fighting With Rules",
       "blocks": [
         {
@@ -5708,10 +5968,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c156",
+      "id": "c162",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 156,
+      "order": 162,
       "title": "Exam practice: Restrictions and their cost",
       "marks": 20,
       "question": "During the Vietnam War, the US government announced a large number of 'self-imposed restrictions.' Comment on the restrictions and their implications for both the US and the Vietcong/North Vietnam.",
@@ -5741,10 +6001,10 @@ window.CARDS_DATA = {
       "howler": "\"One restriction was no selling of drugs by US forces.\" (A real recorded answer — the question is about strategic/military restrictions, not conduct regulations.)"
     },
     {
-      "id": "c157",
+      "id": "c163",
       "type": "reading",
       "phase": "milstrat",
-      "order": 157,
+      "order": 163,
       "title": "Giap: A Strategist's Balance Sheet",
       "blocks": [
         {
@@ -5757,9 +6017,12 @@ window.CARDS_DATA = {
             "title": "Strategic strengths",
             "points": [
               "Patience — willing to fight in decades, not years",
-              "Mass mobilization and political-military integration",
+              "Mass mobilization and political-military integration (Dau-Tranh strategy fusing armed and political struggle)",
               "Adaptability — learned decisively from the 1951 defeat",
-              "Skilled use of terrain, deception, and propaganda warfare"
+              "Skilled use of terrain, deception, and propaganda warfare",
+              "Dedicated psychological operations, distinct from general propaganda — targeting enemy morale and American domestic will to fight",
+              "People-friendly operations that cultivated peasant support rather than alienating it",
+              "Meticulous logistics appreciation — matching ambition to what porters and the Trail could actually sustain"
             ]
           },
           "right": {
@@ -5781,10 +6044,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c158",
+      "id": "c164",
       "type": "examprep",
       "phase": "milstrat",
-      "order": 158,
+      "order": 164,
       "title": "Exam practice: Assessing Giap as strategist",
       "marks": 30,
       "question": "Give a brief assessment of Giap as a military strategist, and briefly elucidate the leadership lessons that can be derived from him, with particular reference to Dien Bien Phu.",
@@ -5802,7 +6065,10 @@ window.CARDS_DATA = {
           "label": "Part II: Strategist's balance sheet, career-wide",
           "marks": 15,
           "points": [
-            "Strengths: patience, adaptability, political-military integration, use of terrain and deception",
+            "Organization of forces and mass mobilization under the Dau-Tranh (armed + political struggle) strategy",
+            "Propaganda warfare and dedicated psychological operations aimed at enemy morale and will to fight",
+            "People-friendly operations that won and held peasant support",
+            "Terrain analysis, deception measures, and logistics appreciation matched to what porters and the Trail could sustain",
             "Weaknesses: acceptance of huge casualties, doctrinal overreach (1951, arguably 1968)",
             "Support with examples from across his entire military career, not Dien Bien Phu alone"
           ]
@@ -5811,15 +6077,16 @@ window.CARDS_DATA = {
       "commonErrors": [
         "Listing Giap's leadership qualities without any supporting example from Dien Bien Phu",
         "Understanding only the tactical-level leadership qualities and missing the strategic-level thought process",
-        "Treating the assessment as purely positive without any weaknesses noted"
+        "Treating the assessment as purely positive without any weaknesses noted",
+        "Naming only 'strengths and weaknesses' generically instead of the specific graded categories: organization of forces, propaganda warfare, psychological ops, people-friendly operations, terrain analysis, Dau-Tranh/protracted-war strategy, deception, mass mobilization, logistics appreciation"
       ],
       "howler": null
     },
     {
-      "id": "c159",
+      "id": "c165",
       "type": "reading",
       "phase": "lessons",
-      "order": 159,
+      "order": 165,
       "title": "Why Did America Fail? Five Explanations",
       "blocks": [
         {
@@ -5847,10 +6114,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c160",
+      "id": "c166",
       "type": "reading",
       "phase": "lessons",
-      "order": 160,
+      "order": 166,
       "title": "Limited War, Unlimited Frustration",
       "blocks": [
         {
@@ -5891,10 +6158,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c161",
+      "id": "c167",
       "type": "essay",
       "phase": "lessons",
-      "order": 161,
+      "order": 167,
       "title": "Essay practice: Explaining the failure",
       "prompt": "Analyze why the United States, despite overwhelming military and economic superiority, failed to achieve its objectives in Vietnam. Which factor do you find most decisive, and why?",
       "points": [
@@ -5905,10 +6172,10 @@ window.CARDS_DATA = {
       ]
     },
     {
-      "id": "c162",
+      "id": "c168",
       "type": "reading",
       "phase": "lessons",
-      "order": 162,
+      "order": 168,
       "title": "Hearts and Minds: Why Nation-Building Failed",
       "blocks": [
         {
@@ -5936,10 +6203,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c163",
+      "id": "c169",
       "type": "reading",
       "phase": "lessons",
-      "order": 163,
+      "order": 169,
       "title": "The Credibility Gap",
       "blocks": [
         {
@@ -5977,10 +6244,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c164",
+      "id": "c170",
       "type": "reading",
       "phase": "lessons",
-      "order": 164,
+      "order": 170,
       "title": "Intelligence, Surprise, and the Body Count",
       "blocks": [
         {
@@ -6001,10 +6268,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c165",
+      "id": "c171",
       "type": "essay",
       "phase": "lessons",
-      "order": 165,
+      "order": 171,
       "title": "Essay practice: Tet's paradox",
       "prompt": "\"Tet was a military defeat but a political victory for Hanoi.\" Explain this paradox and assess whether it reveals a flaw in how the United States measured progress in Vietnam.",
       "points": [
@@ -6015,10 +6282,10 @@ window.CARDS_DATA = {
       ]
     },
     {
-      "id": "c166",
+      "id": "c172",
       "type": "reading",
       "phase": "lessons",
-      "order": 166,
+      "order": 172,
       "title": "The Living-Room War",
       "blocks": [
         {
@@ -6053,10 +6320,91 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c167",
+      "id": "c173",
+      "type": "reading",
+      "phase": "lessons",
+      "order": 173,
+      "title": "Hanoi's Other Front: Exploiting the Open Society",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Distinct from the retrospective debate over whether coverage \"lost\" the war is a sharper claim: that Hanoi's own strategists understood American press freedom itself as an asymmetry to be exploited, since Hanoi's own citizens enjoyed no equivalent access to their government's failures."
+        },
+        {
+          "type": "timeline",
+          "title": "From skepticism to credibility gap",
+          "items": [
+            {
+              "when": "1961-63",
+              "text": "Reporters like David Halberstam and Neil Sheehan grow skeptical of official optimism in Saigon briefings — professional doubt, not opposition to the war itself."
+            },
+            {
+              "when": "1965-67",
+              "text": "Open battlefield access defines the \"living-room war\"; a widening gap between official statements and what correspondents actually saw feeds public distrust."
+            },
+            {
+              "when": "1968 onward",
+              "text": "Tet's dissonance between claims of imminent victory and what television showed turns the credibility gap into a full-blown crisis of trust in official Washington and Saigon accounts."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "The asymmetry, not a conspiracy",
+          "icon": "🗽",
+          "text": "Most historians reject the idea that Hanoi actively recruited or directed American reporters. The more defensible claim is structural: an open society's free press was bound to publish setbacks that a closed society's controlled press never would — an asymmetry Hanoi's own strategists recognized and counted on, without needing to manipulate a single journalist directly."
+        }
+      ],
+      "laterScholarship": null
+    },
+    {
+      "id": "c174",
+      "type": "examprep",
+      "phase": "lessons",
+      "order": 174,
+      "title": "Exam practice: The media as a battlefield",
+      "marks": 30,
+      "question": "It has been argued that North Vietnam indirectly used the openness of American society, through its free press, as a means of waging war against the United States. Discuss this proposition.",
+      "parts": [
+        {
+          "label": "Part I: The asymmetry exploited",
+          "marks": 10,
+          "points": [
+            "An open society granting reporters access denied to any equivalent press in the North",
+            "A free press structurally bound to publish setbacks and casualties official spokesmen wanted minimized"
+          ]
+        },
+        {
+          "label": "Part II: The evolving press-military relationship",
+          "marks": 10,
+          "points": [
+            "Early professional skepticism (Halberstam, Sheehan) predating any real adversarial turn",
+            "The credibility gap opened chiefly by official over-optimism, not by press campaigning",
+            "Tet's dissonance between official claims and what cameras showed"
+          ]
+        },
+        {
+          "label": "Part III: Assessing the proposition",
+          "marks": 10,
+          "points": [
+            "Most historians reject a literal \"Hanoi manipulated the press\" causal claim",
+            "The defensible framing: Hanoi exploited a structural asymmetry between open and closed societies, not an active press campaign",
+            "Distinguish this \"asymmetry exploited\" framing from the separate \"did the media lose the war\" retrospective debate"
+          ]
+        }
+      ],
+      "commonErrors": [
+        "Collapsing this question into the separate \"did media lose the war\" debate without addressing the specific asymmetry Hanoi exploited",
+        "Treating American reporters as knowingly working for Hanoi rather than covering a war under a free press system Hanoi's own society lacked",
+        "Omitting the credibility-gap angle — that official over-optimism, not press bias, was what mostly discredited US claims"
+      ],
+      "howler": "\"The media was working directly for the Vietcong.\" (A real recorded answer — no credible account supports active collusion; the defensible claim is that Hanoi exploited the asymmetry between an open and a closed society, not that it recruited the press.)"
+    },
+    {
+      "id": "c175",
       "type": "essay",
       "phase": "lessons",
-      "order": 167,
+      "order": 175,
       "title": "Essay practice: Did the media lose the war?",
       "prompt": "Did the American media \"lose\" the Vietnam War, as General Westmoreland and others later claimed? Argue your position with evidence.",
       "points": [
@@ -6067,10 +6415,10 @@ window.CARDS_DATA = {
       ]
     },
     {
-      "id": "c168",
+      "id": "c176",
       "type": "reading",
       "phase": "lessons",
-      "order": 168,
+      "order": 176,
       "title": "Two Schools Fight Over the War",
       "blocks": [
         {
@@ -6108,10 +6456,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c169",
+      "id": "c177",
       "type": "reading",
       "phase": "lessons",
-      "order": 169,
+      "order": 177,
       "title": "A Third School: Centering Vietnamese Agency",
       "blocks": [
         {
@@ -6132,10 +6480,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c170",
+      "id": "c178",
       "type": "essay",
       "phase": "lessons",
-      "order": 170,
+      "order": 178,
       "title": "Essay practice: Comparing the schools",
       "prompt": "Compare the orthodox and revisionist interpretations of the Vietnam War. How has access to Vietnamese archives since the 1990s complicated both?",
       "points": [
@@ -6146,10 +6494,10 @@ window.CARDS_DATA = {
       ]
     },
     {
-      "id": "c171",
+      "id": "c179",
       "type": "reading",
       "phase": "lessons",
-      "order": 171,
+      "order": 179,
       "title": "Comparing Two Defeats: France and America",
       "blocks": [
         {
@@ -6186,10 +6534,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c172",
+      "id": "c180",
       "type": "reading",
       "phase": "lessons",
-      "order": 172,
+      "order": 180,
       "title": "The Weinberger and Powell Doctrines",
       "blocks": [
         {
@@ -6218,10 +6566,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c173",
+      "id": "c181",
       "type": "reading",
       "phase": "lessons",
-      "order": 173,
+      "order": 181,
       "title": "The War Powers Resolution",
       "blocks": [
         {
@@ -6238,10 +6586,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c174",
+      "id": "c182",
       "type": "reading",
       "phase": "lessons",
-      "order": 174,
+      "order": 182,
       "title": "Vietnam Syndrome",
       "blocks": [
         {
@@ -6275,10 +6623,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c175",
+      "id": "c183",
       "type": "reading",
       "phase": "lessons",
-      "order": 175,
+      "order": 183,
       "title": "Two Wars Compared: Vietnam and the Gulf",
       "blocks": [
         {
@@ -6316,10 +6664,10 @@ window.CARDS_DATA = {
       "laterScholarship": null
     },
     {
-      "id": "c176",
+      "id": "c184",
       "type": "examprep",
       "phase": "lessons",
-      "order": 176,
+      "order": 184,
       "title": "Exam practice: Vietnam vs. the Gulf War",
       "marks": 50,
       "question": "What was the impact of the long-drawn Vietnam War on the morale of the US Army? How did the Vietnam Syndrome affect the psyche of US leaders even until the Gulf War? How were the two wars different from each other?",
@@ -6358,10 +6706,10 @@ window.CARDS_DATA = {
       "howler": "\"Gulf War happened when Iran captured Qatar.\" (A real recorded answer — the Gulf War followed Iraq's invasion of Kuwait.)"
     },
     {
-      "id": "c177",
+      "id": "c185",
       "type": "essay",
       "phase": "lessons",
-      "order": 177,
+      "order": 185,
       "title": "Essay practice: The lessons learned",
       "prompt": "What are the most important lessons the United States drew — or should have drawn — from Vietnam, and how visible are they in later American military interventions?",
       "points": [
