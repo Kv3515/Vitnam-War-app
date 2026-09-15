@@ -154,7 +154,7 @@
     container.innerHTML = '';
     container.setAttribute('data-phase', card.phase);
 
-    var BADGE_LABELS = { flashcard: 'Active recall', essay: 'Essay practice', reading: 'Reading' };
+    var BADGE_LABELS = { flashcard: 'Active recall', essay: 'Essay practice', examprep: 'Exam practice', reading: 'Reading' };
     var badge = document.createElement('span');
     badge.className = 'card-type-badge ' + card.type;
     badge.textContent = BADGE_LABELS[card.type] || 'Reading';
@@ -220,6 +220,59 @@
       essayRevealBtn.addEventListener('click', function () {
         pointsWrap.classList.remove('hidden');
         essayRevealBtn.classList.add('hidden');
+      });
+    } else if (card.type === 'examprep') {
+      var qWrap = el('div', 'examprep-question');
+      qWrap.appendChild(el('p', null, card.question));
+      if (card.marks) qWrap.appendChild(el('span', 'examprep-marks', '(' + card.marks + ' Marks)'));
+      container.appendChild(qWrap);
+
+      var xpRevealBtn = document.createElement('button');
+      xpRevealBtn.className = 'reveal-btn';
+      xpRevealBtn.textContent = 'Tap to reveal model answer structure';
+      container.appendChild(xpRevealBtn);
+
+      var xpWrap = el('div', 'examprep-answer hidden');
+
+      var partsLabel = el('p', 'essay-points-label', 'Suggested approach');
+      xpWrap.appendChild(partsLabel);
+      (card.parts || []).forEach(function (part) {
+        var partEl = el('div', 'examprep-part');
+        var head = el('div', 'examprep-part-head');
+        head.appendChild(el('span', 'examprep-part-label', part.label));
+        if (part.marks) head.appendChild(el('span', 'examprep-part-marks', part.marks + ' Marks'));
+        partEl.appendChild(head);
+        var ul2 = document.createElement('ul');
+        (part.points || []).forEach(function (point) {
+          ul2.appendChild(el('li', null, point));
+        });
+        partEl.appendChild(ul2);
+        xpWrap.appendChild(partEl);
+      });
+
+      if (card.commonErrors && card.commonErrors.length) {
+        var errBox = el('div', 'block block-callout examprep-errors');
+        var errLabel = el('span', 'block-callout-label');
+        errLabel.appendChild(document.createTextNode('⚠️ Common mistakes to avoid'));
+        errBox.appendChild(errLabel);
+        var errUl = document.createElement('ul');
+        card.commonErrors.forEach(function (e) { errUl.appendChild(el('li', null, e)); });
+        errBox.appendChild(errUl);
+        xpWrap.appendChild(errBox);
+      }
+
+      if (card.howler) {
+        var howlerBox = el('div', 'examprep-howler');
+        howlerBox.appendChild(el('span', 'examprep-howler-label', '😬 Real howler (don\'t do this)'));
+        howlerBox.appendChild(el('p', null, card.howler));
+        xpWrap.appendChild(howlerBox);
+      }
+
+      container.appendChild(xpWrap);
+
+      xpRevealBtn.addEventListener('click', function () {
+        xpWrap.classList.remove('hidden');
+        xpRevealBtn.classList.add('hidden');
       });
     } else if (card.blocks) {
       var blockWrap = document.createElement('div');
@@ -365,7 +418,7 @@
         t.textContent = card.title;
         item.appendChild(t);
 
-        var BROWSE_TYPE_ICONS = { flashcard: '◆', essay: '✎' };
+        var BROWSE_TYPE_ICONS = { flashcard: '◆', essay: '✎', examprep: '🎖' };
         var type = document.createElement('span');
         type.className = 'bi-type';
         type.textContent = BROWSE_TYPE_ICONS[card.type] || '';
@@ -555,11 +608,11 @@
   // ---------- Card-type breakdown ----------
 
   var cardTypeListEl = document.getElementById('card-type-list');
-  var CARD_TYPE_LABELS = { reading: 'Reading cards', flashcard: 'Flashcards', essay: 'Essay practice' };
+  var CARD_TYPE_LABELS = { reading: 'Reading cards', flashcard: 'Flashcards', essay: 'Essay practice', examprep: 'Exam practice' };
 
   function renderCardTypeBreakdown() {
     cardTypeListEl.innerHTML = '';
-    ['reading', 'flashcard', 'essay'].forEach(function (type) {
+    ['reading', 'flashcard', 'essay', 'examprep'].forEach(function (type) {
       var ofType = CARDS.filter(function (c) { return c.type === type; });
       if (!ofType.length) return;
       var done = ofType.filter(function (c) { return state.completedIds.includes(c.id); }).length;
@@ -602,10 +655,10 @@
     reviewPipelineStatusEl.innerHTML = '';
     if (deck.length > 0) {
       reviewPipelineStatusEl.appendChild(statusRow('✅', 'Pipeline working',
-        deck.length + ' of ' + pool.length + ' flashcards & essay-practice cards completed — ready to review.'));
+        deck.length + ' of ' + pool.length + ' flashcard, essay, and exam-practice cards completed — ready to review.'));
     } else if (pool.length > 0) {
       reviewPipelineStatusEl.appendChild(statusRow('⚪', 'Nothing to review yet',
-        '0 of ' + pool.length + ' flashcards & essay-practice cards completed. Mark one done (from Today or Browse), then check back here — this count should go up immediately.'));
+        '0 of ' + pool.length + ' flashcard, essay, and exam-practice cards completed. Mark one done (from Today or Browse), then check back here — this count should go up immediately.'));
     } else {
       reviewPipelineStatusEl.appendChild(statusRow('❌', 'No flashcards or essay cards found',
         'This would indicate a data-loading problem, since the course should always include some.'));

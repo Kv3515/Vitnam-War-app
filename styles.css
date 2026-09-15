@@ -150,6 +150,7 @@ body {
 .card[data-phase="vietnamization"], .glossary-item[data-phase="vietnamization"] { --phase-color: #9b7fd4; }
 .card[data-phase="legacy"], .glossary-item[data-phase="legacy"] { --phase-color: #5aad7a; }
 .card[data-phase="lessons"], .glossary-item[data-phase="lessons"] { --phase-color: #4fb0b0; }
+.card[data-phase="milstrat"], .glossary-item[data-phase="milstrat"] { --phase-color: #c9832f; }
 
 .card-type-badge.reading { background: color-mix(in srgb, var(--phase-color) 22%, var(--bg-elevated)); color: var(--phase-color); }
 
@@ -457,6 +458,76 @@ body {
 .essay-points ul { margin: 0; padding-left: 20px; }
 .essay-points li { font-size: 0.98rem; margin-bottom: 10px; line-height: 1.45; }
 .essay-points li:last-child { margin-bottom: 0; }
+
+/* Exam practice */
+.card-type-badge.examprep { background: #47301f; color: #e0a97f; }
+
+.examprep-question {
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.examprep-question p { margin: 0 0 6px; }
+
+.examprep-marks {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--phase-color, var(--accent));
+}
+
+.examprep-answer { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+.examprep-answer.hidden { display: none; }
+
+.examprep-part {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.examprep-part-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.examprep-part-label { font-weight: 700; font-size: 0.92rem; }
+.examprep-part-marks { font-size: 0.78rem; color: var(--ink-muted); flex: 0 0 auto; white-space: nowrap; }
+
+.examprep-part ul { margin: 0; padding-left: 18px; }
+.examprep-part li { font-size: 0.9rem; margin-bottom: 6px; line-height: 1.4; }
+.examprep-part li:last-child { margin-bottom: 0; }
+
+.examprep-errors { margin-top: 4px; margin-bottom: 10px; }
+.examprep-errors ul { margin: 6px 0 0; padding-left: 18px; }
+.examprep-errors li { font-size: 0.9rem; margin-bottom: 6px; line-height: 1.4; }
+.examprep-errors li:last-child { margin-bottom: 0; }
+
+.examprep-howler {
+  background: #3a2420;
+  border: 1px dashed #8a5a4a;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.examprep-howler-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #d4917a;
+  margin-bottom: 6px;
+}
+
+.examprep-howler p { margin: 0; font-size: 0.92rem; font-style: italic; }
 
 /* Buttons */
 .btn-primary {
